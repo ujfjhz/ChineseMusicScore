@@ -1,4 +1,4 @@
-[English](README.md) | [中文](README_ZH.md)
+[English](README.md) | [中文](README.cn.md)
 
 # ChineseMusicScore
 Chinese Traditional Music Score Library: A collection of Chinese traditional music notated in staff notation. 

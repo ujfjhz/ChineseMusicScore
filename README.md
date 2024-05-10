@@ -31,7 +31,7 @@ Both formats are available for free download and are intended for educational pu
 
 ## Support and Contact
 
-If you have questions, suggestions, or need support with the music scores, please contact us via GitHub or email us at [insert your contact email here].
+If you have questions, suggestions, or need support with the music scores, please contact us via GitHub.
 
 ## Acknowledgments
 

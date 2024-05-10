@@ -21,7 +21,13 @@ We welcome contributions from musicians, scholars, and enthusiasts. If you're in
 
 ## Usage
 
-The scores are available for free and can be downloaded in MusicXML format. They are intended for educational purposes, personal study, and public performance. Please refer to the LICENSE file for more information on the usage rights and restrictions.
+This library provides scores in two formats: MusicXML and PDF.
+
+- **MusicXML Format**: The MusicXML files are intended for use with music notation software. This format allows musicians to edit, transpose, and personalize the scores according to their needs.
+
+- **PDF Format**: The PDF files are ready-to-use and can be directly used for performance. These are designed for easy printing and are ideal for musicians who wish to use the scores in their traditional form without the need for editing.
+
+Both formats are available for free download and are intended for educational purposes, personal study, and public performance. Please refer to the LICENSE file for more information on the usage rights and restrictions.
 
 ## Support and Contact
 

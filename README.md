@@ -19,7 +19,7 @@ This project aims to bridge this gap by transcribing these traditional Chinese c
 
 ## Contribution
 
-We welcome contributions from musicians, scholars, and enthusiasts. If you're interested in contributing to the transcription process or have access to traditional Chinese scores that you would like to see included in this library, please reach out to us. Detailed guidelines for contributions can be found in the CONTRIBUTING.md file.
+We welcome contributions from musicians, scholars, and enthusiasts. If you're interested in contributing to the transcription process or have access to traditional Chinese scores that you would like to see included in this library, please reach out to us. Detailed guidelines for contributions can be found in the [Contribution guidelines](docs/CONTRIBUTING.md) file.
 
 ## Usage
 

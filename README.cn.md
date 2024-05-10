@@ -1,3 +1,5 @@
+[English](README.md) | [中文](README.cn.md)
+
 # ChineseMusicScore
 中国传统音乐乐谱库：一个用五线谱记谱的中国传统音乐集。
 

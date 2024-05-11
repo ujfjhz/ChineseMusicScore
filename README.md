@@ -23,13 +23,15 @@ We welcome contributions from musicians, scholars, and enthusiasts. If you're in
 
 ## Usage
 
-This library provides scores in two formats: MusicXML and PDF.
+This library offers scores in three formats: MusicXML, PDF, and JianpuML.
 
-- **MusicXML Format**: The MusicXML files are intended for use with music notation software. This format allows musicians to edit, transpose, and personalize the scores according to their needs.
+- **MusicXML Format**: MusicXML files are intended for use with music notation software. This format allows musicians to edit, transpose, and personalize the scores according to their needs.
 
-- **PDF Format**: The PDF files are ready-to-use and can be directly used for performance. These are designed for easy printing and are ideal for musicians who wish to use the scores in their traditional form without the need for editing.
+- **PDF Format**: PDF files are ready-to-use and can be directly used for performance. They are designed for easy printing and are ideal for musicians who wish to use the scores in their traditional form without the need for editing.
 
-Both formats are available for free download and are intended for educational purposes, personal study, and public performance. Please refer to the LICENSE file for more information on the usage rights and restrictions.
+- **JianpuML Format**: JianpuML files provide a digital format for Jianpu (numbered musical notation), facilitating the use and sharing of traditional Chinese music scores in a format that is prevalent in China. This format is especially useful for those familiar with Jianpu and looking for an easily accessible digital form.
+
+All formats are available for free download and are intended for educational purposes, personal study, and public performance. Please refer to the LICENSE file for more information on the usage rights and restrictions.
 
 ## Support and Contact
 

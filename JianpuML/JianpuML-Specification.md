@@ -1,58 +1,55 @@
-# JianpuML: 简谱标记语言
+# JianpuML: Jianpu Markup Language
 
-## 概述
+## Overview
 
-JianpuML是一种轻量级的文本格式，用于记录和分享简谱。它旨在易于阅读和编辑，可直接在任何文本编辑器中使用。JianpuML尤其适用于音乐教育、业余音乐创作和快速乐谱分享。
+JianpuML is a lightweight text format for recording and sharing Jianpu, a type of numerical musical notation. It is designed to be easy to read and edit, and can be used directly in any text editor. JianpuML is particularly useful for music education, amateur music composition, and quick music score sharing.
 
-## 设计原则
+## Design Principles
 
-- **简洁性**：格式简单，易于手写和电子编辑。
-- **易读性**：清晰的结构，一眼即可理解乐谱的基本内容。
-- **可扩展性**：虽然初始版本专注于基本功能，但设计上保留了扩展的可能性。
+- **Simplicity**: The format is simple, making it easy for both handwritten and electronic editing.
+- **Readability**: It has a clear structure that allows immediate understanding of the basic content of the music score.
+- **Extensibility**: While the initial version focuses on basic functionality, the design allows for future expansions.
 
+## Metadata
 
-## 元数据
-
-每份简谱文件可以包含若干元数据，描述乐曲的基本信息：
+Each Jianpu file can contain several pieces of metadata that describe the basic information about the music piece:
 
 ```plaintext
-Title: 歌曲标题
-Composer: 作曲者
-Key: 主调
-TimeSignature: 拍号
-Tempo: 每分钟节拍数
+Title: Song Title
+Composer: Composer
+Key: Key
+TimeSignature: Time Signature
+Tempo: Beats Per Minute
 ```
 
-## 音符表示和时值
+## Note Representation and Duration
 
-### 音符表示
+### Note Representation
 
-- **基本音符**：数字`1-7`直接表示相应的音高。
-- **升降音**：`#`表示升半音，`b`表示降半音。例如，`6#`表示将6升半音，`3b`表示将3降半音。
-- **和弦**：同时演奏的多个音符直接写在一起，例如`135`表示同时演奏1、3和5。
+- **Basic Notes**: Numbers `1-7` directly represent the corresponding pitches.
+- **Accidentals**: `#` indicates a sharp (raising the pitch by a half step), and `b` indicates a flat (lowering the pitch by a half step). For example, `6#` means raise the pitch of 6 by a half step, `3b` means lower the pitch of 3 by a half step.
+- **Chords**: Multiple notes played at the same time are written together. For example, `135` represents playing 1, 3, and 5 simultaneously.
 
-### 八度表示
+### Octave Representation
 
-- **高八度**：音符后加点`.`表示升高一个八度。例如，`5.`表示高八度的5。
-- **低八度**：音符前加点`.`表示降低一个八度。例如，`.5`表示低八度的5。
+- **Higher Octave**: Adding a dot `.` after a note raises it by one octave. For example, `5.` means the 5 is played one octave higher.
+- **Lower Octave**: Adding a dot `.` before a note lowers it by one octave. For example, `.5` means the 5 is played one octave lower.
 
-### 时值表示
+### Duration Representation
 
-- 每个音符后可以跟一个斜杠`/`和数字来表示该音符的时值，数字代表该音符是几分音符。例如，`5/4`表示5是一个四分音符，`6#/8`表示升半音的6是一个八分音符。
+- A slash `/` followed by a number can be added after each note to indicate its duration, where the number represents the note's value as a fraction of a whole note. For example, `5/4` means 5 is a quarter note, `6#/8` means a sharp 6 is an eighth note.
 
+## Example
 
-## 示例
-
-以下示例展示了JianpuML格式的使用方法，包括音符的八度和时值表示：
+The following example shows how to use the JianpuML format, including representations of notes' octaves and durations:
 
 ```plaintext
-Title: 小星星变奏
-Composer: 传统
+Title: Twinkle Twinkle Little Star Variations
+Composer: Traditional
 Key: C major
 TimeSignature: 4/4
 Tempo: 100
 
 1/4 1/4 5./4 5./4 | 6./4 6./4 5./2 |
 4/4 4/4 3/4 3/4 | 2/4 2/4 1/2 |
-
 ```

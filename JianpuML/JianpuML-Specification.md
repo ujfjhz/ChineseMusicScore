@@ -2,13 +2,12 @@
 
 ## Overview
 
-JianpuML is a lightweight text format for recording and sharing Jianpu, a type of numerical musical notation. It is designed to be easy to read and edit, and can be used directly in any text editor. JianpuML is particularly useful for music education, amateur music composition, and quick music score sharing.
+JianpuML is a minimalist Jianpu markup language. It focuses exclusively on documenting the pitch and duration of notes, intentionally omitting other musical elements such as dynamics, ornaments, and repeat signs. The primary goal of JianpuML is not to serve as a comprehensive tool for expressing the complexity of Jianpu, but rather to expedite the conversion of Jianpu into a format that can be easily interpreted and utilized in standard music notation software.
 
 ## Design Principles
 
 - **Simplicity**: The format is simple, making it easy for both handwritten and electronic editing.
 - **Readability**: It has a clear structure that allows immediate understanding of the basic content of the music score.
-- **Extensibility**: While the initial version focuses on basic functionality, the design allows for future expansions.
 
 ## Metadata
 
@@ -46,10 +45,13 @@ The following example shows how to use the JianpuML format, including representa
 ```plaintext
 Title: Twinkle Twinkle Little Star Variations
 Composer: Traditional
-Key: C major
+Key: D major
 TimeSignature: 4/4
 Tempo: 100
 
-1/4 1/4 5./4 5./4 | 6./4 6./4 5./2 |
+1/4 1/4 5/4 5/4 | 6/4 6/4 5/2 |
 4/4 4/4 3/4 3/4 | 2/4 2/4 1/2 |
+5/4 5/4 4/4 4/4 | 3/4 3/4 2/2 |
+5/4 5/4 4/4 4/4 | 3/4 3/4 2/2 |
+
 ```

@@ -3,7 +3,7 @@ Composer: 潮州民间
 Key: D major
 TimeSignature: 2/4
 Tempo: 72
-DefaultNoteDivide: 8
+DefaultDuration: 8
 
 
 .6 6 3 5 | .6/16 6/16 5/16 6/16 1./4 | 6 1. 3 5 | .6/4 6/4 | 5 6 5 3 | .2/4 2/4 | .1 1 1/4 |

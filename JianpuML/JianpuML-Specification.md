@@ -2,23 +2,24 @@
 
 ## Overview
 
-JianpuML is a minimalist Jianpu markup language. It focuses exclusively on documenting the pitch and duration of notes, intentionally omitting other musical elements such as dynamics, ornaments, and repeat signs. The primary goal of JianpuML is not to serve as a comprehensive tool for expressing the complexity of Jianpu, but rather to expedite the conversion of Jianpu into a format that can be easily interpreted and utilized in standard music notation software.
+JianpuML is a minimalist markup language for numbered musical notation. JianpuML focuses on recording the pitch and duration of notes, intentionally omitting other musical elements such as dynamics, ornaments, and repeat signs. The primary goal of JianpuML is to facilitate the conversion of Jianpu into formats that are easily readable and usable by standard music notation software.
 
 ## Design Principles
 
-- **Simplicity**: The format is simple, making it easy for both handwritten and electronic editing.
-- **Readability**: It has a clear structure that allows immediate understanding of the basic content of the music score.
+- **Simplicity**: The format is simple, easy to handwrite and edit electronically.
+- **Readability**: The structure is clear, allowing one to understand the basic content of the music at a glance.
 
 ## Metadata
 
-Each Jianpu file can contain several pieces of metadata that describe the basic information about the music piece:
+Each JianpuML file can include several metadata fields describing the basic information of the piece:
 
-```plaintext
+```
 Title: Song Title
 Composer: Composer
-Key: Key
+Key: Key Signature
 TimeSignature: Time Signature
 Tempo: Beats Per Minute
+DefaultDuration: Default note value (e.g., 4 for a quarter note)
 ```
 
 ## Note Representation and Duration
@@ -26,32 +27,38 @@ Tempo: Beats Per Minute
 ### Note Representation
 
 - **Basic Notes**: Numbers `1-7` directly represent the corresponding pitches.
-- **Accidentals**: `#` indicates a sharp (raising the pitch by a half step), and `b` indicates a flat (lowering the pitch by a half step). For example, `6#` means raise the pitch of 6 by a half step, `3b` means lower the pitch of 3 by a half step.
-- **Chords**: Multiple notes played at the same time are written together. For example, `135` represents playing 1, 3, and 5 simultaneously.
+- **Accidentals**: `#` for a sharp, `b` for a flat. For example, `6#` represents a sharp 6, `3b` represents a flat 3.
+- **Chords**: Multiple notes played simultaneously are joined by commas, e.g., `1,5` means playing 1 and 5 together.
 
 ### Octave Representation
 
-- **Higher Octave**: Adding a dot `.` after a note raises it by one octave. For example, `5.` means the 5 is played one octave higher.
-- **Lower Octave**: Adding a dot `.` before a note lowers it by one octave. For example, `.5` means the 5 is played one octave lower.
+- **Higher Octave**: A dot `.` after a note indicates it is one octave higher, e.g., `5.` means the note 5 is played an octave higher.
+- **Lower Octave**: A dot `.` before a note indicates it is one octave lower, e.g., `.5` means the note 5 is played an octave lower.
 
 ### Duration Representation
 
-- A slash `/` followed by a number can be added after each note to indicate its duration, where the number represents the note's value as a fraction of a whole note. For example, `5/4` means 5 is a quarter note, `6#/8` means a sharp 6 is an eighth note.
+- Each note or group of notes may follow a slash `/` and a number indicating the duration. The number represents the type of note, such as `5/4` for a quarter note. If a note's duration matches the default duration, its value can be omitted.
+- **Dotted Notes**: Use a dot `.` to extend the duration by half. For example, `5/4.` indicates a dotted quarter note.
+
+### Multi-Part Representation
+
+- **Part Separation**: The `&` symbol is used to separate different musical parts, allowing multiple parts to be notated on the same line.
 
 ## Example
 
-The following example shows how to use the JianpuML format, including representations of notes' octaves and durations:
+The following example illustrates the use of the JianpuML format, including representations of note octaves and durations, as well as part separation:
 
-```plaintext
-Title: Twinkle Twinkle Little Star Variations
+```
+Title: Twinkle Twinkle Variation
 Composer: Traditional
 Key: D major
 TimeSignature: 4/4
 Tempo: 100
+DefaultDuration: 4
 
-1/4 1/4 5/4 5/4 | 6/4 6/4 5/2 |
-4/4 4/4 3/4 3/4 | 2/4 2/4 1/2 |
-5/4 5/4 4/4 4/4 | 3/4 3/4 2/2 |
-5/4 5/4 4/4 4/4 | 3/4 3/4 2/2 |
-
+1 1 5 5 | 6 6 5/2 |
+4 4 3 3 | 2 2 1/2 |
+1,5 1,5 4 4 | 3 3 2/2 |
+5 5 4 4 & .5 .5 .4 .4 | 3 3 2/2 |
 ```
+

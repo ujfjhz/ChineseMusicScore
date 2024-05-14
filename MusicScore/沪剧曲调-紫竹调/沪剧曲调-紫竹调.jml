@@ -3,7 +3,7 @@ Composer: 沪剧曲调
 Key: D major
 TimeSignature: 2/4
 Tempo: 72
-DefaultNoteDivide: 16
+DefaultDuration: 16
 
 
 6,.6/8 5 6 1. 2. 1. 7 | 6 7 6 5 3 2 3 5 | 6/4 6/4 | .6/8 6/8 5/8 3/8 | .6/8 6/8 5/8 3/8 |

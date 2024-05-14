@@ -93,7 +93,7 @@
                 <pitch>
                     <step>C</step>
                     <alter>1</alter>
-                    <octave>4</octave>
+                    <octave>5</octave>
                 </pitch>
                 <duration>4.0</duration>
                 <type>16th</type>
@@ -113,7 +113,7 @@
                 <pitch>
                     <step>C</step>
                     <alter>1</alter>
-                    <octave>4</octave>
+                    <octave>5</octave>
                 </pitch>
                 <duration>4.0</duration>
                 <type>16th</type>
@@ -265,7 +265,7 @@
             <note>
                 <pitch>
                     <step>E</step>
-                    <octave>3</octave>
+                    <octave>4</octave>
                 </pitch>
                 <duration>2.0</duration>
                 <type>eighth</type>
@@ -929,7 +929,7 @@
                 <pitch>
                     <step>C</step>
                     <alter>1</alter>
-                    <octave>3</octave>
+                    <octave>4</octave>
                 </pitch>
                 <duration>4.0</duration>
                 <type>16th</type>
@@ -1124,7 +1124,7 @@
                 <pitch>
                     <step>C</step>
                     <alter>1</alter>
-                    <octave>3</octave>
+                    <octave>4</octave>
                 </pitch>
                 <duration>4.0</duration>
                 <type>16th</type>
@@ -2208,7 +2208,7 @@
                 <pitch>
                     <step>C</step>
                     <alter>1</alter>
-                    <octave>3</octave>
+                    <octave>4</octave>
                 </pitch>
                 <duration>4.0</duration>
                 <type>16th</type>
@@ -2403,7 +2403,7 @@
                 <pitch>
                     <step>C</step>
                     <alter>1</alter>
-                    <octave>4</octave>
+                    <octave>5</octave>
                 </pitch>
                 <duration>4.0</duration>
                 <type>16th</type>

@@ -33,6 +33,10 @@ This library offers scores in three formats: MusicXML, PDF, and JianpuML.
 
 All formats are available for free download and are intended for educational purposes, personal study, and public performance. Please refer to the LICENSE file for more information on the usage rights and restrictions.
 
+## License
+
+This project is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0). For details, please refer to the [LICENSE](LICENSE) file.
+
 ## Support and Contact
 
 If you have questions, suggestions, or need support with the music scores, please contact us via GitHub.

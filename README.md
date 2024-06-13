@@ -1,12 +1,12 @@
 [English](README.md) | [中文](README.cn.md)
 
 # ChineseMusicScore
-Chinese Traditional Music Score Library: A collection of Chinese traditional music notated in staff notation. 
+Chinese Music Score Library: A collection of Chinese music notated in staff notation. 
 
 
 ## Overview
 
-Chinese traditional and classical music, known for its profound depth and historical richness, has traditionally been notated in Jianpu (numbered musical notation), which is predominantly used within China. However, this notation style is not widely adopted outside of China, limiting the ability of musicians around the world to engage with and perform Chinese music.
+Chinese music, known for its profound depth and historical richness, has traditionally been notated in Jianpu (numbered musical notation), which is predominantly used within China. However, this notation style is not widely adopted outside of China, limiting the ability of musicians around the world to engage with and perform Chinese music.
 
 This project aims to bridge this gap by transcribing these traditional Chinese compositions into staff notation using MusicXML, the universal language of music notation recognized globally. By converting these scores into a format accessible to all musicians, regardless of their instrument or location, this initiative seeks to make Chinese music more universally playable and appreciated.
 

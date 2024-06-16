@@ -16,6 +16,7 @@ Each JianpuML file can include several metadata fields describing the basic info
 ```
 Title: Song Title
 Composer: Composer
+Arranger: Arranger
 Key: Key Signature
 TimeSignature: Time Signature
 Tempo: Beats Per Minute
@@ -46,7 +47,8 @@ The following example illustrates the use of the JianpuML format, including repr
 
 ```
 Title: Twinkle Twinkle Variation
-Composer: Traditional
+Composer: Composer
+Arranger: Arranger
 Key: D major
 TimeSignature: 4/4
 Tempo: 100
@@ -55,6 +57,6 @@ DefaultDuration: 4
 1 1 5 5 | 6 6 5/2 |
 4 4 3 3 | 2 2 1/2 |
 1,5 1,5 4 4 | 3 3 2/2 |
-5 5 4 4 & .5 .5 .4 .4 | 3 3 2/2 |
+5 5 4 4 | 3 3 2/2 |
 ```
 

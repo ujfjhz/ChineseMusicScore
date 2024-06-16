@@ -40,10 +40,6 @@ DefaultDuration: Default note value (e.g., 4 for a quarter note)
 - Each note or group of notes may follow a slash `/` and a number indicating the duration. The number represents the type of note, such as `5/4` for a quarter note. If a note's duration matches the default duration, its value can be omitted.
 - **Dotted Notes**: Use a dot `.` to extend the duration by half. For example, `5/4.` indicates a dotted quarter note.
 
-### Multi-Part Representation
-
-- **Part Separation**: The `&` symbol is used to separate different musical parts, allowing multiple parts to be notated on the same line.
-
 ## Example
 
 The following example illustrates the use of the JianpuML format, including representations of note octaves and durations, as well as part separation:

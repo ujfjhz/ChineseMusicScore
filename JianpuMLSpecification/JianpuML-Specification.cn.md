@@ -22,6 +22,7 @@ Key: 调号
 TimeSignature: 拍号
 Tempo: 每分钟节拍数
 DefaultDuration: 默认音符时值（例如，4 表示四分音符）
+Staff: 当用JianpuML直接表达五线谱时，设为true
 ```
 
 特别是以下字段可以在乐谱中多次修改，以适应乐曲的不同部分：
@@ -38,6 +39,7 @@ DefaultDuration: 默认音符时值（例如，4 表示四分音符）
 - **升降号**: `#` 表示升号，`b` 表示降号。例如，`6#` 表示升 6，`3b` 表示降 3。
 - **和弦**: 同时演奏的多个音符用逗号连接，例如 `1,5` 表示同时演奏音符 1 和 5。
 - **连奏**: 用括号 () 将音符包裹表示连奏。例如，`(3 5 6)` 表示这三个音符连奏。
+- **固定调表示**: 除了支持首调的数字表示法，还支持了固定调的字母表示法，用CDEFGAB表示绝对音高。从而，JianpuML不仅可以表达简谱，还可以直接表达五线谱。
 
 ### 八度表示法
 
@@ -77,3 +79,20 @@ DefaultDuration: 8
 1 1 1 1 5 5 5 5 | 6 6 6 6 5/2 ｜[ 4 4 4 ] [ 3 3 3 ] | ( 2 2 ) 1/2 |
 ```
 
+以下示例展示了用 JianpuML 直接表达五线谱:
+
+```
+Title: 北京的金山上
+Composer: 藏族民歌
+Arranger: 单简
+
+Key: F
+Staff: true
+TimeSignature: 4/4
+Tempo: 108
+DefaultDuration: 8
+
+A/4 A C. E./4 E. D. | C./4 (D. E.) D./4 (D./a C./a C./a A/a) | (A/2. C./4) | E./4 D. (C./a A/a) C./4 D. E.|
+A/4 C. D. (A/4 A/A G/A G/A E/A) | E/1 | A A G E A A G E | A A/A A/A C. E. E. (C./A D./A) (D./A C./A C./A A/A) |
+A/2 C. (A/A C./A) D. E. | A (A/A G/A E/4) E G A C. | D. D./A D./A (D./A C./A) (C./A A/A) (A/2 | A/4) (d./a c./a c./a a/a) a a a 0
+```

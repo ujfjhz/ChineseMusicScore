@@ -22,7 +22,6 @@ Key: Key Signature
 TimeSignature: Time Signature
 Tempo: Beats Per Minute
 DefaultDuration: Default note value (e.g., 4 for a quarter note)
-Staff: Set to true when using JianpuML to directly express staff notation.
 ```
 
 Notably, the following fields can be modified multiple times throughout the score to accommodate different sections of the music:
@@ -39,7 +38,7 @@ Notably, the following fields can be modified multiple times throughout the scor
 - **Accidentals**: `#` for a sharp, `b` for a flat. For example, `6#` represents a sharp 6, `3b` represents a flat 3.
 - **Chords**: Multiple notes played simultaneously are joined by commas, e.g., `1,5` means playing 1 and 5 together.
 - **Legato**: Notes enclosed in parentheses () are played legato (smoothly connected). For example, (3 5 6) represents three notes played in legato.
-- **Fixed Pitch Notation**: In addition to supporting the numerical representation, this system also supports fixed pitch letter notation using CDEFGAB to represent absolute pitches. Thus, JianpuML can express not only Jianpu but also directly represent staff notation.
+- **Fixed Pitch Notation**: In addition to supporting the numerical representation, this system also supports fixed pitch letter notation. Add ```Staff: true``` in the metadata to use CDEFGAB to represent absolute pitches. Thus, JianpuML can express not only Jianpu but also directly represent staff notation.
 
 ### Octave Representation
 
